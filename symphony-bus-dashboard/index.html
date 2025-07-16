@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帝琴灣穿梭巴士實時資訊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="main-title">帝琴灣穿梭巴士實時資訊</h1>
+            <div class="time-info">
+                <div class="current-time">
+                    <span class="label">現在時間：</span>
+                    <span id="currentTime" class="time-display">載入中...</span>
+                </div>
+                <div class="holiday-status">
+                    <span class="label">假期狀態：</span>
+                    <span id="holidayStatus" class="status-display">載入中...</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Bus Routes Grid -->
+        <main class="routes-grid">
+            <div class="route-card" data-route="route1">
+                <div class="route-header">
+                    <h2 class="route-name">帝琴灣 → 沙田</h2>
+                    <div class="schedule-type">
+                        <span id="scheduleType1" class="schedule-indicator">平日</span>
+                    </div>
+                </div>
+                <div class="route-info">
+                    <div class="next-bus-label">下一班車</div>
+                    <div id="nextBus1" class="next-bus-time">載入中...</div>
+                </div>
+            </div>
+
+            <div class="route-card" data-route="route2">
+                <div class="route-header">
+                    <h2 class="route-name">沙田 → 帝琴灣</h2>
+                    <div class="schedule-type">
+                        <span id="scheduleType2" class="schedule-indicator">平日</span>
+                    </div>
+                </div>
+                <div class="route-info">
+                    <div class="next-bus-label">下一班車</div>
+                    <div id="nextBus2" class="next-bus-time">載入中...</div>
+                </div>
+            </div>
+
+            <div class="route-card" data-route="route3">
+                <div class="route-header">
+                    <h2 class="route-name">帝琴灣 → 馬鞍山</h2>
+                    <div class="schedule-type">
+                        <span id="scheduleType3" class="schedule-indicator">平日</span>
+                    </div>
+                </div>
+                <div class="route-info">
+                    <div class="next-bus-label">下一班車</div>
+                    <div id="nextBus3" class="next-bus-time">載入中...</div>
+                </div>
+            </div>
+
+            <div class="route-card" data-route="route4">
+                <div class="route-header">
+                    <h2 class="route-name">馬鞍山 → 帝琴灣</h2>
+                    <div class="schedule-type">
+                        <span id="scheduleType4" class="schedule-indicator">平日</span>
+                    </div>
+                </div>
+                <div class="route-info">
+                    <div class="next-bus-label">下一班車</div>
+                    <div id="nextBus4" class="next-bus-time">載入中...</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="update-info">資訊每秒更新 | 資料更新時間：<span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
