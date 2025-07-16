@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穿梭巴士時間表 - 即時資訊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with current time and holiday status -->
+        <header class="header">
+            <div class="time-section">
+                <div class="current-time" id="currentTime"></div>
+                <div class="current-date" id="currentDate"></div>
+                <div class="holiday-status" id="holidayStatus"></div>
+            </div>
+        </header>
+
+        <!-- Main content area -->
+        <main class="main-content">
+            <!-- New Town Plaza Routes (Blue) -->
+            <section class="route-group route-group--blue">
+                <h2 class="route-group-title">新城市廣場路線</h2>
+                <div class="routes-container">
+                    <div class="route-card" id="route1">
+                        <h3 class="route-name">由凱弦居經凱琪居往新城市廣場</h3>
+                        <div class="bus-times">
+                            <div class="next-bus">
+                                <span class="time-label">下一班:</span>
+                                <span class="time-value" id="route1-next">--:--</span>
+                            </div>
+                            <div class="next-next-bus">
+                                <span class="time-label">下下班:</span>
+                                <span class="time-value" id="route1-next-next">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="route-card" id="route2">
+                        <h3 class="route-name">由新城市廣場經凱琪居往凱弦居</h3>
+                        <div class="bus-times">
+                            <div class="next-bus">
+                                <span class="time-label">下一班:</span>
+                                <span class="time-value" id="route2-next">--:--</span>
+                            </div>
+                            <div class="next-next-bus">
+                                <span class="time-label">下下班:</span>
+                                <span class="time-value" id="route2-next-next">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sunshine City Routes (Green) -->
+            <section class="route-group route-group--green">
+                <h2 class="route-group-title">新港城路線</h2>
+                <div class="routes-container">
+                    <div class="route-card" id="route3">
+                        <h3 class="route-name">由凱琪居經凱弦居往新港城</h3>
+                        <div class="bus-times">
+                            <div class="next-bus">
+                                <span class="time-label">下一班:</span>
+                                <span class="time-value" id="route3-next">--:--</span>
+                            </div>
+                            <div class="next-next-bus">
+                                <span class="time-label">下下班:</span>
+                                <span class="time-value" id="route3-next-next">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="route-card" id="route4">
+                        <h3 class="route-name">由新港城經凱弦居往凱琪居</h3>
+                        <div class="bus-times">
+                            <div class="next-bus">
+                                <span class="time-label">下一班:</span>
+                                <span class="time-value" id="route4-next">--:--</span>
+                            </div>
+                            <div class="next-next-bus">
+                                <span class="time-label">下下班:</span>
+                                <span class="time-value" id="route4-next-next">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>最後更新: <span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
