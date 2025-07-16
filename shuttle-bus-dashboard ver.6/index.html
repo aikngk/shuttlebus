@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穿梭巴士班次表</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">穿梭巴士班次表</h1>
+            <div class="header__time">
+                <div class="current-time" id="currentTime">--:--:--</div>
+                <div class="current-date" id="currentDate">----年--月--日 ----</div>
+                <div class="holiday-status" id="holidayStatus">--</div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="routes-grid">
+                <!-- New Town Plaza Routes -->
+                <div class="route-group route-group--newtown">
+                    <h2 class="route-group__title">新城市廣場路線</h2>
+                    
+                    <div class="route-card" data-route="route1">
+                        <h3 class="route-card__name">凱弦居 → 新城市廣場</h3>
+                        <div class="route-card__info">
+                            <div class="route-card__current-time">
+                                現在時間：<span id="route1-current">--:--</span>
+                            </div>
+                            <div class="route-card__next">
+                                下一班車：<span id="route1-next">--:--</span>
+                                <span class="route-card__minutes" id="route1-minutes">--</span>
+                            </div>
+                            <div class="route-card__after">
+                                之後班車：<span id="route1-after">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="route-card" data-route="route2">
+                        <h3 class="route-card__name">新城市廣場 → 凱弦居</h3>
+                        <div class="route-card__info">
+                            <div class="route-card__current-time">
+                                現在時間：<span id="route2-current">--:--</span>
+                            </div>
+                            <div class="route-card__next">
+                                下一班車：<span id="route2-next">--:--</span>
+                                <span class="route-card__minutes" id="route2-minutes">--</span>
+                            </div>
+                            <div class="route-card__after">
+                                之後班車：<span id="route2-after">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunshine City Routes -->
+                <div class="route-group route-group--sunshine">
+                    <h2 class="route-group__title">新港城路線</h2>
+                    
+                    <div class="route-card" data-route="route3">
+                        <h3 class="route-card__name">凱琴居 → 新港城</h3>
+                        <div class="route-card__info">
+                            <div class="route-card__current-time">
+                                現在時間：<span id="route3-current">--:--</span>
+                            </div>
+                            <div class="route-card__next">
+                                下一班車：<span id="route3-next">--:--</span>
+                                <span class="route-card__minutes" id="route3-minutes">--</span>
+                            </div>
+                            <div class="route-card__after">
+                                之後班車：<span id="route3-after">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="route-card" data-route="route4">
+                        <h3 class="route-card__name">新港城 → 凱琴居</h3>
+                        <div class="route-card__info">
+                            <div class="route-card__current-time">
+                                現在時間：<span id="route4-current">--:--</span>
+                            </div>
+                            <div class="route-card__next">
+                                下一班車：<span id="route4-next">--:--</span>
+                                <span class="route-card__minutes" id="route4-minutes">--</span>
+                            </div>
+                            <div class="route-card__after">
+                                之後班車：<span id="route4-after">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
